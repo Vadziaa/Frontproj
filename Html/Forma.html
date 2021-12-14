@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HTML5 и CSS3 сайт</title>
+  <link rel="stylesheet" href="css/aims.css">
+  <link rel="stylesheet" href="css/Forma.css">
+</head>
+<body>
+  <header>
+    <div id="logo" onclick="slowScroll('#top')">
+      <span>FinFuture</span>
+    </div>
+    <div id="about">
+      <a href="index.html" title="Возможности" onclick="slowScroll('#main')">Почему стоит выбрать нас?</a>
+      <a href="price.html" onclick="slowScroll('#overview')" title="Преимущества">Услуги</a>
+      <a href="Forma.html" onclick="slowScroll('#contacts')" title="Контакты">Обратная связь</a>
+      <a href="FAQ.html" onclick="slowScroll('#faq')" title="Ответы на вопросы">FAQ</a>
+      <a href="aims.html" onclick="slowScroll('#faq')" title="Ответы на вопросы">О нас</a>
+    </div>
+  </header>
+  <div class="about-section">
+    <div class="container">
+  <div style="text-align:center">
+    <h2>Напиши нам</h2>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="img/map.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">Имя</label>
+        <input type="text" id="fname" name="firstname" placeholder="Введите имя">
+        <label for="lname">Фамилия</label>
+        <input type="text" id="lname" name="lastname" placeholder="Введите Фамилию">
+        <label for="country">Страна</label>
+        <select id="country" name="Страна">
+          <option value="australia">Австралия</option>
+          <option value="canada">Канада</option>
+          <option value="usa">США</option>
+          <option value="russia">Россия</option>
+          <option value="Belarus">Беларусь</option>
+        </select>
+        <label for="subject">Вопросы</label>
+        <textarea id="subject" name="subject" placeholder="Напиши нам" style="height:170px"></textarea>
+        <input type="submit" value="Отправить">
+      </form>
+    </div>
+  </div>
+</div>
+    </div>
+    </body>
+    </html>
